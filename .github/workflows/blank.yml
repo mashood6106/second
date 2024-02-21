@@ -29,7 +29,11 @@ jobs:
         run: echo Hello, world!
 
       
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: java version
+        run: java -version
+      - name: python version
+        run: python -v
+      - name: git version
+        run: git --version
+      - name: maven version
+        run: mvn --version
